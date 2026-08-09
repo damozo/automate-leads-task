@@ -26,13 +26,16 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    baseURL: 'https://develop-hqzen.cxrole.com/',
+    baseURL: 'https://staging-hqzen.cxrole.com/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-
-    /* Run tests in headed mode */
-    // headless: false,
+    video: 'on',
+    // viewport: null,
+    // headless: process.env.CI ? true : false,
+    // launchOptions: {
+    //   args: ['--start-maximized'],g ho
+    // },Hello  I am Donna Mae Mozo I ma workinfromm o 
   },
 
   /* Configure projects for major browsers */
